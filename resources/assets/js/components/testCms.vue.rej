@@ -1,0 +1,20 @@
+diff a/resources/assets/js/components/testCms.vue b/resources/assets/js/components/testCms.vue	(rejected hunks)
+@@ -29,8 +29,17 @@
+         <hr><br>
+         <div class="form-group">
+           <div class="left">
+-            <label for="name"><h5>ชื่อเรื่อง</h5></label>
++            <div class="row">
++              <div class="col-3">
++                <label for="name"><h5>ชื่อเรื่อง</h5></label>
++              </div>
++              <div class="col-1 offset-md-8">
++                cover
++              </div>
++            </div>
++           
+           </div>
++          <span></span>
+           <textarea class="form-control" id="name" v-model="newPost.title"></textarea>
+         </div>
+         <br>
